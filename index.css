@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins'sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    min-height: 100vh;
+    background: #5256AD;
+}
+.wrapper{
+    width: 370px;
+    border-radius: 7px;
+    padding: 25px 30px;
+    background: rgb(243, 120, 120);
+}
+.wrapper header{
+    font-size: 25px;
+    text-align: center;
+    font-weight: 500;
+}
+.wrapper form{
+    margin: 35px 0 23px;
+}
+form .raw{
+    display: flex;
+   margin-bottom: 20px;
+    flex-direction: column;
+
+}
+form .raw lable{
+    font-size: 23px;
+    margin-bottom: 5px;
+}
+form :where(textarea,select,button){
+    outline:none;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+
+}
+form .raw textarea{
+    resize: none;
+    height: 110px;
+    border: 2px solid rgb(160, 77, 77);
+    font-size: 15px;
+   color: darkslategray;
+   font-size: 13dcsspx;
+ 
+}
+
+
+form .raw .outer{
+   height: 47px;
+   border-radius: 5px;
+   border: 1px solid #999; 
+   align-items: center;
+   display: flex;
+   padding: 0 10px ;
+ 
+}
+.outer select{
+    font-size: 15px;
+
+}
+#rate-control {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 0;
+  }
+form button{
+    height: 50px;
+    background-color: #5256AD;
+    color: aquamarine;
+    cursor: pointer;
+    margin-top: 10px;
+}
+

@@ -1,0 +1,223 @@
+  // unternance.addEventListener('boundary', function(event) {
+  //   console.log(`${event.name} boundary reached after ${Math.trunc(event.elapsedTime)} seconds.`);
+  // });
+  // unternance.addEventListener('end', function(event) {
+  //   console.log(`Utterance has finished being spoken after ${Math.floor(event.elapsedTime)} seconds.`);
+  // });
+
+
+  // unternance.addEventListener('error', function(event) {
+  //   console.log(`An error has occurred with the speech synthesis: ${event.error}`);
+  // });
+  //  unternance.addEventListener('resume', function(event) {
+  //   console.log(`Speech resumed after ${event.elapsedTime} seconds.`);
+  // });
+  // unternance.addEventListener('start', function(event) {
+  //   console.log(`We have started uttering this speech: ${event.utterance.text}`);
+  // });
+ // if the available device voice name is equal to user seleted voice name
+    // then set the sppech voice to user seleted voice
+    
+  //   unternance.addEventListener('boundary', function(event) {
+  //     console.log(`${event.name} boundary reached after ${event.charIndex} seconds.`);
+  //   });
+  //   unternance.onboundary = function(event) {
+  //     console.log(`${event.name} boundary reached after ${event.elapsedTime} seconds.`);
+  //   }
+   // unternance.addEventListener('mark', function(event) {
+  //   console.log(`A mark was reached: ${event.charIndex}`);
+  // });
+
+
+   // if the available device voice name is equal to user seleted voice name
+    // then set the sppech voice to user seleted voice
+    
+  //   unternance.addEventListener('boundary', function(event) {
+  //     console.log(`${event.name} boundary reached after ${event.charIndex} seconds.`);
+  //   });
+  //   unternance.onboundary = function(event) {
+  //     console.log(`${event.name} boundary reached after ${event.elapsedTime} seconds.`);
+  //   }
+  //    unternance.addEventListener('end', function(event) {
+  //   console.log(`Utterance has finished being spoken after ${Math.floor(event.elapsedTime)} seconds.`);
+  // });
+  // unternance.addEventListener('mark', function(event) {
+  //   console.log(`A mark was reached: ${event.charIndex}`);
+  // });
+
+
+
+  // speechBtn.addEventListener("click",() =>{
+//   const len=textarea.value.length 
+//  console.log(len)
+//  // .querySelector("textarea").innerHTML= length
+//  text.querySelector("textarea").innerHTML = length;
+// })
+
+// speechBtn.addEventListener("click",() =>{
+//   var context = document.querySelector(".textarea");
+//   console.log(context)
+//   var instance = new Mark(text.value);
+//   instance.mark( unternance [ options]);
+// })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const textarea = document.querySelector("textarea");
+
+// const speechBtn = document.querySelector("button");
+// const voiceList = document.querySelector("select");
+// const removeBtn=document.getElementById("Remove")
+// const rate = document.querySelector("#rate");
+
+
+
+// removeBtn.addEventListener("click",()=>{
+//   let cancel = document.querySelector("textarea");
+//   cancel.value = ''
+  
+
+// })
+
+
+
+// let talk = speechSynthesis;
+// const voices=talk
+// isSpeaking = true;
+// voices();
+
+
+
+// function voices() {
+
+//   for (let voice of talk.getVoices()) {
+ 
+//     // seleting "Google US English" voice is default
+//     let selected = voice.name === document.querySelector("textarea")
+//     //    creating an option tag with passing voice name and voice lang
+//     let option = `<option value="${voice.name}"${selected}>${voice.name}(${voice.lang})(</option>`;
+//     voiceList.insertAdjacentHTML("beforeend", option);
+    
+    
+//   }
+// }
+
+// talk.addEventListener("voiceschanged",voices);
+// // const voices = synth.getVoices();
+
+// function textToSpeech(text){
+//   let unternance = new SpeechSynthesisUtterance(text);
+//   let selectedOption = voiceList.selectedOptions[0].getAttribute('textarea');
+//   console.log(selectedOption)
+
+
+
+//   for(let voice of talk.getVoices()) {
+  
+    
+
+//   // unternance.onpause = function(event) {
+//   //   const char = event.utterance.text.charAt(event.charIndex);
+//   //   console.log(`Speech paused at character ${event.charIndex} of "${event.utterance.text}", which is "${char}".`);
+//   // }
+    
+//     // if (voice.name === voiceList.value) {
+//     //   unternance.voice = voice; 
+//     // }
+//     for (let i = 0; i < voice.length ; i++) {
+//       if(voice[i].name === selectedOption.value) {
+//         unternance.voice = voice[i];
+//       }
+//     }
+   
+//   }
+//   //  speak the speech/utternance
+//   unternance.volume =1;
+//   unternance.rate= rate.value
+//   speechSynthesis.speak(unternance);
+//   textarea.blur()
+  
+// }
+
+
+
+
+
+
+
+// speechBtn.addEventListener("click", (e) => {
+//   e.preventDefault();
+//   if(textarea.value !== "") {
+//     if(!talk.speaking) {
+//       textToSpeech(textarea.value); 
+//     }
+//     setInterval(()=>{
+//       if(!talk.speaking && !isSpeaking){
+//         isSpeaking=true
+//         speechBtn.innerText="Convert To Speech..";
+//       }
+//     })
+//     if(textarea.value.length >80) { 
+//       if(isSpeaking){
+//         talk.resume();
+//         isSpeaking = false;
+//         speechBtn.innerText="Pasuse speech..";
+       
+//       }else{
+//         talk.pause();
+//         isSpeaking = true;
+//         speechBtn.innerText="Resume speech..";
+//       }
+//      }else{
+//       speechBtn.innerText="Convert To Speech..";
+
+//      }
+//   }
+// });
+
